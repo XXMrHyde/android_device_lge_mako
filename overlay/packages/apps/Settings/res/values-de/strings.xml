@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Jelly Edition Change Log strings -->
+    <string name="djechangelog_title">Dark Jelly N4 Edition Change Log</string>
+
+    <!-- Dark Jelly S Edition Updates -->
+    <string name="update_me_app_settings_title">Dark Jelly N4 Edition Updates</string>
+</resources>
