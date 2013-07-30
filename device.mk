@@ -259,6 +259,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
+# Dark Jelly N4 Edition additions
+
+# Copy over the Dark Jelly N4 Edition changelog to the device
+PRODUCT_COPY_FILES += \
+    device/lge/mako/CHANGELOG-DJE.txt:system/etc/CHANGELOG-DJE.txt
+
+# Dark Jelly N4 Edition Property Overrides
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.dj.version=Dark-Jelly-N4-Edition-(Build-0) \
+    updateme.name=Dark-Jelly-N4-Edition \
+    updateme.version=0.0.0 \
+    updateme.urlcheck=http://<-add-url-here-> \
+    updateme.reboottype=2 \
+    updateme.disableinstalledapps=1 \
+    updateme.disablescripts=1
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # This is the mako-specific audio package
