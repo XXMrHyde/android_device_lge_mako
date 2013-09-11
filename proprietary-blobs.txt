@@ -149,6 +149,7 @@
 /system/lib/libstagefright_hdcp.so
 /system/lib/libWVphoneAPI.so
 /system/lib/libxml.so
+/system/lib/soundfx/libfmas.so
 /system/vendor/firmware/a300_pfp.fw
 /system/vendor/firmware/a300_pm4.fw
 /system/vendor/firmware/bcm2079x_firmware.ncd
@@ -168,4 +169,4 @@
 /system/vendor/lib/libwvm.so
 /system/vendor/lib/libwvdrm_L1.so
 /system/vendor/lib/drm/libdrmwvmplugin.so
-/system/vendor/lib/mediadrm/libdrmwvmplugin.so
+/system/vendor/lib/mediadrm/libwvdrmengine.so
