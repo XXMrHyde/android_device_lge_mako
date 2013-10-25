@@ -1679,10 +1679,8 @@ status_t  QCameraHardwareInterface::takePicture()
             }
             return ret;
         }
-
         /*prepare snapshot, e.g LED*/
         takePicturePrepareHardware( );
-
         /* There's an issue where we have a glimpse of corrupted data between
            a time we stop a preview and display the postview. It happens because
            when we call stopPreview we deallocate the preview buffers hence overlay
