@@ -49,9 +49,6 @@ TARGET_KERNEL_CONFIG := mako_defconfig
 TARGET_VARIANT_CONFIG := mako_defconfig
 TARGET_SELINUX_CONFIG := mako_defconfig
 
-# Device specific part of the OTA update uri
-PRODUCT_UPDATE_URI_PART := vwwqt3sepg51eln/dk_update_mako.json
-
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/mako/device.mk)
 $(call inherit-product-if-exists, vendor/lge/mako/device-vendor.mk)
