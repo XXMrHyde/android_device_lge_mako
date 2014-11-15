@@ -41,18 +41,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-ifeq ($(USE_SVELTE_KERNEL),true)
-LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
-else
-LOCAL_KERNEL := device/lge/mako-kernel/kernel
-endif
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+# Kernel inline build
+TARGET_KERNEL_SOURCE := kernel/msm/mako
+TARGET_KERNEL_CONFIG := mako_defconfig
+TARGET_VARIANT_CONFIG := mako_defconfig
+TARGET_SELINUX_CONFIG := mako_defconfig
 
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
