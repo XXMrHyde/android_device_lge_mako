@@ -39,6 +39,10 @@ PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+  device/lge/mako/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/mako/device.mk)
 $(call inherit-product-if-exists, vendor/lge/mako/device-vendor.mk)
