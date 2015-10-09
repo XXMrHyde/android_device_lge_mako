@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Kernel inline build
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 TARGET_KERNEL_SOURCE := kernel/msm/mako
 TARGET_KERNEL_CONFIG := mako_defconfig
 TARGET_VARIANT_CONFIG := mako_defconfig
